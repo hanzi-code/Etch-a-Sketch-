@@ -9,6 +9,16 @@ body {
     height: 100vh;
 }
 
+button {
+    border: none;
+    border-radius: 12px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -17,7 +27,17 @@ body {
 }
 
 .container {
+    display: inline-grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     border: 3px solid black;
-    height: 55%;
-    width: 40%;
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+}
+
+.grid-cell {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
 }
